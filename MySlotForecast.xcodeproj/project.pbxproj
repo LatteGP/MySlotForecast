@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EB71DF62982ABB6003DA291 /* MySlotForecastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71DF52982ABB6003DA291 /* MySlotForecastApp.swift */; };
+		8EB71DF82982ABB6003DA291 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71DF72982ABB6003DA291 /* ContentView.swift */; };
+		8EB71DFA2982ABB7003DA291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB71DF92982ABB7003DA291 /* Assets.xcassets */; };
+		8EB71DFD2982ABB7003DA291 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB71DFC2982ABB7003DA291 /* Preview Assets.xcassets */; };
+		8EB71DFF2982ABB7003DA291 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71DFE2982ABB7003DA291 /* Persistence.swift */; };
+		8EB71E022982ABB7003DA291 /* MySlotForecast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71E002982ABB7003DA291 /* MySlotForecast.xcdatamodeld */; };
+		8EB71E0C2982ABB7003DA291 /* MySlotForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71E0B2982ABB7003DA291 /* MySlotForecastTests.swift */; };
+		8EB71E162982ABB7003DA291 /* MySlotForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71E152982ABB7003DA291 /* MySlotForecastUITests.swift */; };
+		8EB71E182982ABB7003DA291 /* MySlotForecastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71E172982ABB7003DA291 /* MySlotForecastUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EB71E082982ABB7003DA291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EB71DEA2982ABB6003DA291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EB71DF12982ABB6003DA291;
+			remoteInfo = MySlotForecast;
+		};
+		8EB71E122982ABB7003DA291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EB71DEA2982ABB6003DA291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EB71DF12982ABB6003DA291;
+			remoteInfo = MySlotForecast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8EB71DF22982ABB6003DA291 /* MySlotForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySlotForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB71DF52982ABB6003DA291 /* MySlotForecastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySlotForecastApp.swift; sourceTree = "<group>"; };
+		8EB71DF72982ABB6003DA291 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8EB71DF92982ABB7003DA291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EB71DFC2982ABB7003DA291 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8EB71DFE2982ABB7003DA291 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		8EB71E012982ABB7003DA291 /* MySlotForecast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MySlotForecast.xcdatamodel; sourceTree = "<group>"; };
+		8EB71E072982ABB7003DA291 /* MySlotForecastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySlotForecastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB71E0B2982ABB7003DA291 /* MySlotForecastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySlotForecastTests.swift; sourceTree = "<group>"; };
+		8EB71E112982ABB7003DA291 /* MySlotForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySlotForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB71E152982ABB7003DA291 /* MySlotForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySlotForecastUITests.swift; sourceTree = "<group>"; };
+		8EB71E172982ABB7003DA291 /* MySlotForecastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySlotForecastUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EB71DEF2982ABB6003DA291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB71E042982ABB7003DA291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB71E0E2982ABB7003DA291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EB71DE92982ABB6003DA291 = {
+			isa = PBXGroup;
+			children = (
+				8EB71DF42982ABB6003DA291 /* MySlotForecast */,
+				8EB71E0A2982ABB7003DA291 /* MySlotForecastTests */,
+				8EB71E142982ABB7003DA291 /* MySlotForecastUITests */,
+				8EB71DF32982ABB6003DA291 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EB71DF32982ABB6003DA291 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EB71DF22982ABB6003DA291 /* MySlotForecast.app */,
+				8EB71E072982ABB7003DA291 /* MySlotForecastTests.xctest */,
+				8EB71E112982ABB7003DA291 /* MySlotForecastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EB71DF42982ABB6003DA291 /* MySlotForecast */ = {
+			isa = PBXGroup;
+			children = (
+				8EB71DF52982ABB6003DA291 /* MySlotForecastApp.swift */,
+				8EB71DF72982ABB6003DA291 /* ContentView.swift */,
+				8EB71DF92982ABB7003DA291 /* Assets.xcassets */,
+				8EB71DFE2982ABB7003DA291 /* Persistence.swift */,
+				8EB71E002982ABB7003DA291 /* MySlotForecast.xcdatamodeld */,
+				8EB71DFB2982ABB7003DA291 /* Preview Content */,
+			);
+			path = MySlotForecast;
+			sourceTree = "<group>";
+		};
+		8EB71DFB2982ABB7003DA291 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8EB71DFC2982ABB7003DA291 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8EB71E0A2982ABB7003DA291 /* MySlotForecastTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EB71E0B2982ABB7003DA291 /* MySlotForecastTests.swift */,
+			);
+			path = MySlotForecastTests;
+			sourceTree = "<group>";
+		};
+		8EB71E142982ABB7003DA291 /* MySlotForecastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8EB71E152982ABB7003DA291 /* MySlotForecastUITests.swift */,
+				8EB71E172982ABB7003DA291 /* MySlotForecastUITestsLaunchTests.swift */,
+			);
+			path = MySlotForecastUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EB71DF12982ABB6003DA291 /* MySlotForecast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB71E1B2982ABB7003DA291 /* Build configuration list for PBXNativeTarget "MySlotForecast" */;
+			buildPhases = (
+				8EB71DEE2982ABB6003DA291 /* Sources */,
+				8EB71DEF2982ABB6003DA291 /* Frameworks */,
+				8EB71DF02982ABB6003DA291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySlotForecast;
+			productName = MySlotForecast;
+			productReference = 8EB71DF22982ABB6003DA291 /* MySlotForecast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EB71E062982ABB7003DA291 /* MySlotForecastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB71E1E2982ABB7003DA291 /* Build configuration list for PBXNativeTarget "MySlotForecastTests" */;
+			buildPhases = (
+				8EB71E032982ABB7003DA291 /* Sources */,
+				8EB71E042982ABB7003DA291 /* Frameworks */,
+				8EB71E052982ABB7003DA291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EB71E092982ABB7003DA291 /* PBXTargetDependency */,
+			);
+			name = MySlotForecastTests;
+			productName = MySlotForecastTests;
+			productReference = 8EB71E072982ABB7003DA291 /* MySlotForecastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EB71E102982ABB7003DA291 /* MySlotForecastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB71E212982ABB7003DA291 /* Build configuration list for PBXNativeTarget "MySlotForecastUITests" */;
+			buildPhases = (
+				8EB71E0D2982ABB7003DA291 /* Sources */,
+				8EB71E0E2982ABB7003DA291 /* Frameworks */,
+				8EB71E0F2982ABB7003DA291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EB71E132982ABB7003DA291 /* PBXTargetDependency */,
+			);
+			name = MySlotForecastUITests;
+			productName = MySlotForecastUITests;
+			productReference = 8EB71E112982ABB7003DA291 /* MySlotForecastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EB71DEA2982ABB6003DA291 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					8EB71DF12982ABB6003DA291 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					8EB71E062982ABB7003DA291 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8EB71DF12982ABB6003DA291;
+					};
+					8EB71E102982ABB7003DA291 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8EB71DF12982ABB6003DA291;
+					};
+				};
+			};
+			buildConfigurationList = 8EB71DED2982ABB6003DA291 /* Build configuration list for PBXProject "MySlotForecast" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EB71DE92982ABB6003DA291;
+			productRefGroup = 8EB71DF32982ABB6003DA291 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EB71DF12982ABB6003DA291 /* MySlotForecast */,
+				8EB71E062982ABB7003DA291 /* MySlotForecastTests */,
+				8EB71E102982ABB7003DA291 /* MySlotForecastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EB71DF02982ABB6003DA291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB71DFD2982ABB7003DA291 /* Preview Assets.xcassets in Resources */,
+				8EB71DFA2982ABB7003DA291 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB71E052982ABB7003DA291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB71E0F2982ABB7003DA291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EB71DEE2982ABB6003DA291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB71DFF2982ABB7003DA291 /* Persistence.swift in Sources */,
+				8EB71DF82982ABB6003DA291 /* ContentView.swift in Sources */,
+				8EB71E022982ABB7003DA291 /* MySlotForecast.xcdatamodeld in Sources */,
+				8EB71DF62982ABB6003DA291 /* MySlotForecastApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB71E032982ABB7003DA291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB71E0C2982ABB7003DA291 /* MySlotForecastTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB71E0D2982ABB7003DA291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB71E162982ABB7003DA291 /* MySlotForecastUITests.swift in Sources */,
+				8EB71E182982ABB7003DA291 /* MySlotForecastUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EB71E092982ABB7003DA291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EB71DF12982ABB6003DA291 /* MySlotForecast */;
+			targetProxy = 8EB71E082982ABB7003DA291 /* PBXContainerItemProxy */;
+		};
+		8EB71E132982ABB7003DA291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EB71DF12982ABB6003DA291 /* MySlotForecast */;
+			targetProxy = 8EB71E122982ABB7003DA291 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8EB71E192982ABB7003DA291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EB71E1A2982ABB7003DA291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EB71E1C2982ABB7003DA291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MySlotForecast/Preview Content\"";
+				DEVELOPMENT_TEAM = 7W8326U3N7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latte.MySlotForecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EB71E1D2982ABB7003DA291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MySlotForecast/Preview Content\"";
+				DEVELOPMENT_TEAM = 7W8326U3N7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latte.MySlotForecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8EB71E1F2982ABB7003DA291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W8326U3N7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latte.MySlotForecastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySlotForecast.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MySlotForecast";
+			};
+			name = Debug;
+		};
+		8EB71E202982ABB7003DA291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W8326U3N7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latte.MySlotForecastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySlotForecast.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MySlotForecast";
+			};
+			name = Release;
+		};
+		8EB71E222982ABB7003DA291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W8326U3N7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latte.MySlotForecastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MySlotForecast;
+			};
+			name = Debug;
+		};
+		8EB71E232982ABB7003DA291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W8326U3N7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.latte.MySlotForecastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MySlotForecast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EB71DED2982ABB6003DA291 /* Build configuration list for PBXProject "MySlotForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB71E192982ABB7003DA291 /* Debug */,
+				8EB71E1A2982ABB7003DA291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EB71E1B2982ABB7003DA291 /* Build configuration list for PBXNativeTarget "MySlotForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB71E1C2982ABB7003DA291 /* Debug */,
+				8EB71E1D2982ABB7003DA291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EB71E1E2982ABB7003DA291 /* Build configuration list for PBXNativeTarget "MySlotForecastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB71E1F2982ABB7003DA291 /* Debug */,
+				8EB71E202982ABB7003DA291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EB71E212982ABB7003DA291 /* Build configuration list for PBXNativeTarget "MySlotForecastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB71E222982ABB7003DA291 /* Debug */,
+				8EB71E232982ABB7003DA291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8EB71E002982ABB7003DA291 /* MySlotForecast.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8EB71E012982ABB7003DA291 /* MySlotForecast.xcdatamodel */,
+			);
+			currentVersion = 8EB71E012982ABB7003DA291 /* MySlotForecast.xcdatamodel */;
+			path = MySlotForecast.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8EB71DEA2982ABB6003DA291 /* Project object */;
+}
