@@ -9,10 +9,8 @@ import SwiftUI
 
 struct WebSearchView: View {
     
-    /** 店舗記録エントリー画面のビューモデル */
+    /** 親画面のビューモデル */
     @EnvironmentObject var parentViewModel: StoreEntryViewModel
-    /** Web検索画面のビューモデル */
-    @StateObject var viewModel = WebSearchViewModel()
     
     var body: some View {
         ZStack {
@@ -21,25 +19,33 @@ struct WebSearchView: View {
                 WebView()
                     .environmentObject(self.parentViewModel)
                 HStack(spacing: 0) {
-                    Button(action: {
-                        withAnimation {
-                            if self.parentViewModel.verifyStoreSourceUrl() {
+                    if self.parentViewModel.sourceUrl.isEmpty {
+                        // キャンセルボタン
+                        Button("キャンセル") {
+                            withAnimation {
                                 self.parentViewModel.isActiveWebSearchView = false
-                            } else {
-                                self.viewModel.isActiveAlert = true
                             }
                         }
-                    }){
-                        Image(systemName: "checkmark.circle")
+                        .bold()
+                        .font(.subheadline)
+                        .foregroundColor(.red)
+                    } else {
+                        // 選択ボタン
+                        Button(action: {
+                            withAnimation {
+                                self.parentViewModel.isActiveWebSearchView = false
+                            }
+                        }){
+                            Image(systemName: "checkmark.circle.fill")
+                            Text("選択")
+                        }
+                        .bold()
+                        .font(.subheadline)
+                        .foregroundColor(.green)
                     }
-                    .font(.largeTitle)
-                    .foregroundColor(.green)
                 }
-                .padding(.vertical)
+                .frame(height: 60)
             }
-        }
-        .alert(isPresented: self.$viewModel.isActiveAlert) {
-            Alert(title: Text("エラー"), message: Text("このページから店舗情報を\n取得することができませんでした。\n店舗の取材結果一覧ページで\nもう一度お試しください。"))
         }
         .preferredColorScheme(.dark)
     }

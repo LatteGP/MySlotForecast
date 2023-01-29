@@ -27,16 +27,21 @@ enum WebSearchContents {
         case .KUROBARA:
             return "https://www.google.com/"
         case .PREVIEW:
-            return "https://aims777.com/"
+            return Self.AIMS.utlString()
         }
     }
     
+    /** 検証URLを返す */
     func verifyUrlSource() -> String {
         switch(self) {
+        case .MINREPO:
+            return "https://www.google.com/"
         case .AIMS:
             return "https://aims777.com/hall_tax/h-"
-        default:
+        case .KUROBARA:
             return "https://www.google.com/"
+        case .PREVIEW:
+            return Self.AIMS.verifyUrlSource()
         }
     }
 }

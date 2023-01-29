@@ -13,12 +13,16 @@ class StoreEntryViewModel: ObservableObject {
     @Published var isActiveWebSearchView: Bool = false
     /** 検索対象のコンテンツ */
     @Published var webSearchContent = WebSearchContents.PREVIEW
-    /** 店舗記録取得元URL */
-    @Published var storeSourceUrl: String = ""
+    /** 店舗記録ソースURL */
+    @Published var sourceUrl: String = ""
     
-    /** 正しいURLなのかを検証 */
-    func verifyStoreSourceUrl() -> Bool {
-        return self.storeSourceUrl.contains(self.webSearchContent.verifyUrlSource())
+    /** 店舗記録ソースURLなのかを検証 */
+    func verifySourceUrl(_ urlSring: String) {
+        guard urlSring.contains(self.webSearchContent.verifyUrlSource()) else {
+            self.sourceUrl = ""
+            return
+        }
+        self.sourceUrl = urlSring
     }
     
     /** 店舗記録を保存  */

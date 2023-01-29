@@ -11,7 +11,7 @@ import WebKit
 
 struct WebView: UIViewRepresentable {
     
-    /** 店舗記録エントリー画面のビューモデル */
+    /** 親画面のビューモデル */
     @EnvironmentObject var parentViewModel: StoreEntryViewModel
     
     /** UIView初期化 */
@@ -45,7 +45,8 @@ struct WebView: UIViewRepresentable {
 
 extension WebView {
     class Coordinator: NSObject, WKUIDelegate, WKNavigationDelegate {
-        var viewModel : StoreEntryViewModel
+        
+        var viewModel: StoreEntryViewModel
         
         init(_ viewModel: StoreEntryViewModel) {
             self.viewModel = viewModel
@@ -53,9 +54,9 @@ extension WebView {
         
         /** ページ表示処理完了  */
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            // URLを取得し格納する
+            // URLを検証する
             let urlString = webView.url?.absoluteString ?? ""
-            self.viewModel.storeSourceUrl = urlString
+            self.viewModel.verifySourceUrl(urlString)
         }
     }
 }

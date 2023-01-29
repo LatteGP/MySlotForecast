@@ -20,7 +20,6 @@ struct StoreEntryView: View {
                     WebSearchView()
                         .transition(.move(edge: .bottom))
                         .environmentObject(self.viewModel)
-                    
                 } else {
                     Button(action: {
                         withAnimation {

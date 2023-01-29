@@ -23,7 +23,6 @@
 		8EECE05D2985454100334E13 /* WebSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE05C2985454100334E13 /* WebSearchView.swift */; };
 		8EECE05F29854E9800334E13 /* StoreEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE05E29854E9800334E13 /* StoreEntryView.swift */; };
 		8EECE0632985501600334E13 /* StoreEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE0622985501600334E13 /* StoreEntryViewModel.swift */; };
-		8EECE065298567A400334E13 /* WebSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE064298567A300334E13 /* WebSearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +62,6 @@
 		8EECE05C2985454100334E13 /* WebSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSearchView.swift; sourceTree = "<group>"; };
 		8EECE05E29854E9800334E13 /* StoreEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEntryView.swift; sourceTree = "<group>"; };
 		8EECE0622985501600334E13 /* StoreEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEntryViewModel.swift; sourceTree = "<group>"; };
-		8EECE064298567A300334E13 /* WebSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				8EECE0622985501600334E13 /* StoreEntryViewModel.swift */,
-				8EECE064298567A300334E13 /* WebSearchViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -326,7 +323,6 @@
 				8EECE05129849B5100334E13 /* WebView.swift in Sources */,
 				8EB71DF82982ABB6003DA291 /* ContentView.swift in Sources */,
 				8EECE05F29854E9800334E13 /* StoreEntryView.swift in Sources */,
-				8EECE065298567A400334E13 /* WebSearchViewModel.swift in Sources */,
 				8EECE05B2984A93000334E13 /* WebSearchContents.swift in Sources */,
 				8EB71E022982ABB7003DA291 /* MySlotForecast.xcdatamodeld in Sources */,
 				8EB71DF62982ABB6003DA291 /* MySlotForecastApp.swift in Sources */,
