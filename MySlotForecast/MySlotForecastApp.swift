@@ -9,12 +9,15 @@ import SwiftUI
 
 @main
 struct MySlotForecastApp: App {
-    let persistenceController = PersistenceController.shared
+    // let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
+            MainView()
+            /*
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+             */
         }
     }
 }

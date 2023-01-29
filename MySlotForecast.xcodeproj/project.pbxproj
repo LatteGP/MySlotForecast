@@ -16,6 +16,14 @@
 		8EB71E0C2982ABB7003DA291 /* MySlotForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71E0B2982ABB7003DA291 /* MySlotForecastTests.swift */; };
 		8EB71E162982ABB7003DA291 /* MySlotForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71E152982ABB7003DA291 /* MySlotForecastUITests.swift */; };
 		8EB71E182982ABB7003DA291 /* MySlotForecastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71E172982ABB7003DA291 /* MySlotForecastUITestsLaunchTests.swift */; };
+		8EECE05129849B5100334E13 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE05029849B5100334E13 /* WebView.swift */; };
+		8EECE0562984A34D00334E13 /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE0552984A34D00334E13 /* GlobalVariable.swift */; };
+		8EECE0582984A47800334E13 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE0572984A47800334E13 /* MainView.swift */; };
+		8EECE05B2984A93000334E13 /* WebSearchContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE05A2984A93000334E13 /* WebSearchContents.swift */; };
+		8EECE05D2985454100334E13 /* WebSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE05C2985454100334E13 /* WebSearchView.swift */; };
+		8EECE05F29854E9800334E13 /* StoreEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE05E29854E9800334E13 /* StoreEntryView.swift */; };
+		8EECE0632985501600334E13 /* StoreEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE0622985501600334E13 /* StoreEntryViewModel.swift */; };
+		8EECE065298567A400334E13 /* WebSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE064298567A300334E13 /* WebSearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,14 @@
 		8EB71E112982ABB7003DA291 /* MySlotForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySlotForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB71E152982ABB7003DA291 /* MySlotForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySlotForecastUITests.swift; sourceTree = "<group>"; };
 		8EB71E172982ABB7003DA291 /* MySlotForecastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySlotForecastUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8EECE05029849B5100334E13 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		8EECE0552984A34D00334E13 /* GlobalVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
+		8EECE0572984A47800334E13 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8EECE05A2984A93000334E13 /* WebSearchContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSearchContents.swift; sourceTree = "<group>"; };
+		8EECE05C2985454100334E13 /* WebSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSearchView.swift; sourceTree = "<group>"; };
+		8EECE05E29854E9800334E13 /* StoreEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEntryView.swift; sourceTree = "<group>"; };
+		8EECE0622985501600334E13 /* StoreEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEntryViewModel.swift; sourceTree = "<group>"; };
+		8EECE064298567A300334E13 /* WebSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +114,9 @@
 		8EB71DF42982ABB6003DA291 /* MySlotForecast */ = {
 			isa = PBXGroup;
 			children = (
+				8EECE04E29849B0100334E13 /* Core */,
+				8EECE0592984A90C00334E13 /* Enums */,
+				8EECE04F29849B3700334E13 /* Views */,
 				8EB71DF52982ABB6003DA291 /* MySlotForecastApp.swift */,
 				8EB71DF72982ABB6003DA291 /* ContentView.swift */,
 				8EB71DF92982ABB7003DA291 /* Assets.xcassets */,
@@ -131,6 +150,43 @@
 				8EB71E172982ABB7003DA291 /* MySlotForecastUITestsLaunchTests.swift */,
 			);
 			path = MySlotForecastUITests;
+			sourceTree = "<group>";
+		};
+		8EECE04E29849B0100334E13 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8EECE0552984A34D00334E13 /* GlobalVariable.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8EECE04F29849B3700334E13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8EECE05429849C3500334E13 /* Models */,
+				8EECE0572984A47800334E13 /* MainView.swift */,
+				8EECE05029849B5100334E13 /* WebView.swift */,
+				8EECE05C2985454100334E13 /* WebSearchView.swift */,
+				8EECE05E29854E9800334E13 /* StoreEntryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8EECE05429849C3500334E13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8EECE0622985501600334E13 /* StoreEntryViewModel.swift */,
+				8EECE064298567A300334E13 /* WebSearchViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8EECE0592984A90C00334E13 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8EECE05A2984A93000334E13 /* WebSearchContents.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +319,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EECE0562984A34D00334E13 /* GlobalVariable.swift in Sources */,
+				8EECE0582984A47800334E13 /* MainView.swift in Sources */,
 				8EB71DFF2982ABB7003DA291 /* Persistence.swift in Sources */,
+				8EECE0632985501600334E13 /* StoreEntryViewModel.swift in Sources */,
+				8EECE05129849B5100334E13 /* WebView.swift in Sources */,
 				8EB71DF82982ABB6003DA291 /* ContentView.swift in Sources */,
+				8EECE05F29854E9800334E13 /* StoreEntryView.swift in Sources */,
+				8EECE065298567A400334E13 /* WebSearchViewModel.swift in Sources */,
+				8EECE05B2984A93000334E13 /* WebSearchContents.swift in Sources */,
 				8EB71E022982ABB7003DA291 /* MySlotForecast.xcdatamodeld in Sources */,
 				8EB71DF62982ABB6003DA291 /* MySlotForecastApp.swift in Sources */,
+				8EECE05D2985454100334E13 /* WebSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
