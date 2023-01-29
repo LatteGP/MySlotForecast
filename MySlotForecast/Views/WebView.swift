@@ -11,8 +11,10 @@ import WebKit
 
 struct WebView: UIViewRepresentable {
     
-    /** 親画面のビューモデル */
-    @EnvironmentObject var parentViewModel: StoreEntryViewModel
+    /** 初期表示URL */
+    let webUrl: String
+    /** WebViewコーディネータ */
+    let coordinator: WebView.Coordinator
     
     /** UIView初期化 */
     func makeUIView(context: Context) -> WKWebView {
@@ -26,7 +28,7 @@ struct WebView: UIViewRepresentable {
         // リンクプレビューを許可しない
         webView.allowsLinkPreview = false
         // 初期表示URLの設定
-        let url = URL(string: self.parentViewModel.webSearchContent.utlString())!
+        let url = URL(string: self.webUrl)!
         let request = URLRequest(url: url)
         webView.load(request)
         return webView
@@ -39,24 +41,13 @@ struct WebView: UIViewRepresentable {
     
     /** UIViewコーディネーター */
     func makeCoordinator() -> Coordinator {
-        Coordinator(self.parentViewModel)
+        self.coordinator
     }
 }
 
 extension WebView {
+    /** WebViewコーディネータベースクラス */
     class Coordinator: NSObject, WKUIDelegate, WKNavigationDelegate {
-        
-        var viewModel: StoreEntryViewModel
-        
-        init(_ viewModel: StoreEntryViewModel) {
-            self.viewModel = viewModel
-        }
-        
-        /** ページ表示処理完了  */
-        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            // URLを検証する
-            let urlString = webView.url?.absoluteString ?? ""
-            self.viewModel.verifySourceUrl(urlString)
-        }
+        //
     }
 }

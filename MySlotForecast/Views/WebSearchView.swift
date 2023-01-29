@@ -9,15 +9,28 @@ import SwiftUI
 
 struct WebSearchView: View {
     
-    /** 親画面のビューモデル */
+    /** 親ビューモデル */
     @EnvironmentObject var parentViewModel: StoreEntryViewModel
+    /** Web検索画面のビューモデル */
+    @StateObject var viewModel = WebSearchViewModel()
     
     var body: some View {
         ZStack {
             Color(UIColor.secondarySystemBackground)
             VStack(spacing: 0) {
-                WebView()
-                    .environmentObject(self.parentViewModel)
+                ZStack {
+                    WebView(
+                        webUrl: self.parentViewModel.webSearchContent.utlString(),
+                        coordinator: self.viewModel
+                    )
+                    .opacity(self.viewModel.isLoadingWebView ? 0.2 : 1.0)
+                    
+                    if self.viewModel.isLoadingWebView {
+                        ProgressView("Loading")
+                            .font(.subheadline)
+                    }
+                    
+                }
                 HStack(spacing: 0) {
                     if self.parentViewModel.sourceUrl.isEmpty {
                         // キャンセルボタン
@@ -48,6 +61,9 @@ struct WebSearchView: View {
             }
         }
         .preferredColorScheme(.dark)
+        .onAppear {
+            self.viewModel.setParentViewModel(self.parentViewModel)
+        }
     }
 }
 

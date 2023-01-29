@@ -18,8 +18,8 @@ struct StoreEntryView: View {
             VStack {
                 if self.viewModel.isActiveWebSearchView {
                     WebSearchView()
-                        .transition(.move(edge: .bottom))
                         .environmentObject(self.viewModel)
+                        .transition(.move(edge: .bottom))
                 } else {
                     Button(action: {
                         withAnimation {
