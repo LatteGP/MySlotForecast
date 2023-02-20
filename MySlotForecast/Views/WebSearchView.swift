@@ -20,7 +20,7 @@ struct WebSearchView: View {
             VStack(spacing: 0) {
                 ZStack {
                     WebView(
-                        webUrl: self.parentViewModel.webSearchContent.utlString(),
+                        webUrl: self.parentViewModel.eventContent.entranceUrl,
                         coordinator: self.viewModel
                     )
                     .opacity(self.viewModel.isLoadingWebView ? 0.2 : 1.0)
@@ -32,7 +32,7 @@ struct WebSearchView: View {
                     
                 }
                 HStack(spacing: 0) {
-                    if self.parentViewModel.sourceUrl.isEmpty {
+                    if self.parentViewModel.eventContent.sourceUrl.isEmpty {
                         // キャンセルボタン
                         Button("キャンセル") {
                             withAnimation {

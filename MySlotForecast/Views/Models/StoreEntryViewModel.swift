@@ -12,9 +12,9 @@ class StoreEntryViewModel: ObservableObject {
     /** Web検索画面アクティブフラグ */
     @Published var isActiveWebSearchView: Bool = false
     /** 検索対象のコンテンツ */
-    @Published var webSearchContent = WebSearchContents.PREVIEW
-    /** 店舗記録ソースURL */
-    @Published var sourceUrl: String = ""
+    @Published var eventContent = RawEventContents.PREVIEW.instance()
+    /** 店舗名 */
+    @Published var storeName = ""
     
     /** 店舗記録を保存  */
     func saveStoreArchives(_ completion: (Bool) -> Void) {

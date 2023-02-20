@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8E2A986629860F740065EE72 /* WebSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A986529860F740065EE72 /* WebSearchViewModel.swift */; };
+		8E3044BA29A37F9B004B4425 /* EventContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3044B929A37F9B004B4425 /* EventContent.swift */; };
+		8E3044BD29A39848004B4425 /* AimsEventContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3044BC29A39848004B4425 /* AimsEventContent.swift */; };
+		8E3044BF29A39D18004B4425 /* MinrepoEventContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3044BE29A39D18004B4425 /* MinrepoEventContent.swift */; };
+		8E3044C129A39D6E004B4425 /* KurobaraEventContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3044C029A39D6E004B4425 /* KurobaraEventContent.swift */; };
+		8E3044C429A3B0A8004B4425 /* RawEventContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3044C329A3B0A8004B4425 /* RawEventContents.swift */; };
 		8EB71DF62982ABB6003DA291 /* MySlotForecastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71DF52982ABB6003DA291 /* MySlotForecastApp.swift */; };
 		8EB71DF82982ABB6003DA291 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB71DF72982ABB6003DA291 /* ContentView.swift */; };
 		8EB71DFA2982ABB7003DA291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB71DF92982ABB7003DA291 /* Assets.xcassets */; };
@@ -20,7 +25,6 @@
 		8EECE05129849B5100334E13 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE05029849B5100334E13 /* WebView.swift */; };
 		8EECE0562984A34D00334E13 /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE0552984A34D00334E13 /* GlobalVariable.swift */; };
 		8EECE0582984A47800334E13 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE0572984A47800334E13 /* MainView.swift */; };
-		8EECE05B2984A93000334E13 /* WebSearchContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE05A2984A93000334E13 /* WebSearchContents.swift */; };
 		8EECE05D2985454100334E13 /* WebSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE05C2985454100334E13 /* WebSearchView.swift */; };
 		8EECE05F29854E9800334E13 /* StoreEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE05E29854E9800334E13 /* StoreEntryView.swift */; };
 		8EECE0632985501600334E13 /* StoreEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECE0622985501600334E13 /* StoreEntryViewModel.swift */; };
@@ -45,6 +49,11 @@
 
 /* Begin PBXFileReference section */
 		8E2A986529860F740065EE72 /* WebSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSearchViewModel.swift; sourceTree = "<group>"; };
+		8E3044B929A37F9B004B4425 /* EventContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventContent.swift; sourceTree = "<group>"; };
+		8E3044BC29A39848004B4425 /* AimsEventContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AimsEventContent.swift; sourceTree = "<group>"; };
+		8E3044BE29A39D18004B4425 /* MinrepoEventContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinrepoEventContent.swift; sourceTree = "<group>"; };
+		8E3044C029A39D6E004B4425 /* KurobaraEventContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KurobaraEventContent.swift; sourceTree = "<group>"; };
+		8E3044C329A3B0A8004B4425 /* RawEventContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawEventContents.swift; sourceTree = "<group>"; };
 		8EB71DF22982ABB6003DA291 /* MySlotForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySlotForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB71DF52982ABB6003DA291 /* MySlotForecastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySlotForecastApp.swift; sourceTree = "<group>"; };
 		8EB71DF72982ABB6003DA291 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,7 +69,6 @@
 		8EECE05029849B5100334E13 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		8EECE0552984A34D00334E13 /* GlobalVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
 		8EECE0572984A47800334E13 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		8EECE05A2984A93000334E13 /* WebSearchContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSearchContents.swift; sourceTree = "<group>"; };
 		8EECE05C2985454100334E13 /* WebSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSearchView.swift; sourceTree = "<group>"; };
 		8EECE05E29854E9800334E13 /* StoreEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEntryView.swift; sourceTree = "<group>"; };
 		8EECE0622985501600334E13 /* StoreEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreEntryViewModel.swift; sourceTree = "<group>"; };
@@ -91,6 +99,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E3044BB29A39685004B4425 /* EventContents */ = {
+			isa = PBXGroup;
+			children = (
+				8E3044B929A37F9B004B4425 /* EventContent.swift */,
+				8E3044BE29A39D18004B4425 /* MinrepoEventContent.swift */,
+				8E3044BC29A39848004B4425 /* AimsEventContent.swift */,
+				8E3044C029A39D6E004B4425 /* KurobaraEventContent.swift */,
+			);
+			path = EventContents;
+			sourceTree = "<group>";
+		};
+		8E3044C229A3B074004B4425 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8E3044C329A3B0A8004B4425 /* RawEventContents.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		8EB71DE92982ABB6003DA291 = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				8EECE04E29849B0100334E13 /* Core */,
-				8EECE0592984A90C00334E13 /* Enums */,
 				8EECE04F29849B3700334E13 /* Views */,
 				8EB71DF52982ABB6003DA291 /* MySlotForecastApp.swift */,
 				8EB71DF72982ABB6003DA291 /* ContentView.swift */,
@@ -155,6 +181,8 @@
 		8EECE04E29849B0100334E13 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8E3044C229A3B074004B4425 /* Enums */,
+				8E3044BB29A39685004B4425 /* EventContents */,
 				8EECE0552984A34D00334E13 /* GlobalVariable.swift */,
 			);
 			path = Core;
@@ -179,14 +207,6 @@
 				8E2A986529860F740065EE72 /* WebSearchViewModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		8EECE0592984A90C00334E13 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				8EECE05A2984A93000334E13 /* WebSearchContents.swift */,
-			);
-			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,10 +347,14 @@
 				8EB71DF82982ABB6003DA291 /* ContentView.swift in Sources */,
 				8EECE05F29854E9800334E13 /* StoreEntryView.swift in Sources */,
 				8E2A986629860F740065EE72 /* WebSearchViewModel.swift in Sources */,
-				8EECE05B2984A93000334E13 /* WebSearchContents.swift in Sources */,
+				8E3044C129A39D6E004B4425 /* KurobaraEventContent.swift in Sources */,
 				8EB71E022982ABB7003DA291 /* MySlotForecast.xcdatamodeld in Sources */,
+				8E3044BF29A39D18004B4425 /* MinrepoEventContent.swift in Sources */,
+				8E3044C429A3B0A8004B4425 /* RawEventContents.swift in Sources */,
 				8EB71DF62982ABB6003DA291 /* MySlotForecastApp.swift in Sources */,
 				8EECE05D2985454100334E13 /* WebSearchView.swift in Sources */,
+				8E3044BA29A37F9B004B4425 /* EventContent.swift in Sources */,
+				8E3044BD29A39848004B4425 /* AimsEventContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,6 @@ struct StoreEntryView: View {
                 } else {
                     Button(action: {
                         withAnimation {
-                            self.viewModel.webSearchContent = WebSearchContents.AIMS
                             self.viewModel.isActiveWebSearchView = true
                         }
                     }) {
@@ -31,6 +30,8 @@ struct StoreEntryView: View {
                         Image(systemName: "rectangle.and.text.magnifyingglass")
                             .font(.title2)
                     }
+                    Text(self.viewModel.storeName)
+                        .padding(.vertical, 10)
                 }
             }
         }
