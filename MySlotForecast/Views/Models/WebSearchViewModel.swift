@@ -42,6 +42,7 @@ class WebSearchViewModel: WebView.Coordinator, ObservableObject {
             // 店舗名とソースURLをセット
             self.parent.storeName = result!
             self.parent.eventContent.sourceUrl = webUrl
+            self.webView = webView
         }
     }
     
@@ -58,5 +59,59 @@ class WebSearchViewModel: WebView.Coordinator, ObservableObject {
         self.analyzeSource(webView)
     }
     
+    private var webView: WKWebView!
+    
+    public func close() {
+        
+        // スクリプト
+        let script = """
+            let doms = document.getElementsByClassName('table_wrap')[0];
+            let table = doms.getElementsByTagName('table')[0];
+            let data = [];
+            for (let i = 0; i < table.rows.length; i++) {
+                let row = table.rows[i];
+                let rowData = [];
+                for (let j = 0; j < row.cells.length; j++) {
+                    let cell = row.cells[j];
+                    rowData.push(cell.innerText);
+                }
+                data.push(rowData);
+            }
+            data;
+        """
+        
+        // 解析実行
+        webView.evaluateJavaScript(script) { (result, error) in
+            // エラー
+            guard error == nil else {
+                print(error!)
+                return
+            }
+            if let csvString = self.generateCsvStringFromJavaScriptResult(result) {
+                print(csvString)
+            } else {
+                print("Failed to generate CSV string from JavaScript result.")
+            }
+        }
+    }
+    
+    func generateCsvStringFromJavaScriptResult(_ result: Any?) -> String? {
+        guard let resultArray = result as? [[String]] else {
+            print("JavaScript result is not in the expected format.")
+            return nil
+        }
+
+        var csvString = ""
+
+        for row in resultArray {
+            let rowString = row.map { "\"\($0.replacingOccurrences(of: "\"", with: "\"\""))\"" }.joined(separator: ",")
+            csvString.append(rowString)
+            csvString.append("\n")
+        }
+
+        return csvString
+    }
+    
 }
+
 

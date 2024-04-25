@@ -37,7 +37,7 @@ enum RawEventContents {
         case .KUROBARA:
             return KurobaraEventContent()
         case .PREVIEW:
-            return AimsEventContent()
+            return MinrepoEventContent()
         }
     }
     

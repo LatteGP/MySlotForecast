@@ -45,6 +45,7 @@ struct WebSearchView: View {
                     } else {
                         // 選択ボタン
                         Button(action: {
+                            self.viewModel.close()
                             withAnimation {
                                 self.parentViewModel.isActiveWebSearchView = false
                             }

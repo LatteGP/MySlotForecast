@@ -21,11 +21,23 @@ class MinrepoEventContent: EventContent {
     
     /** ソース解析 */
     func analyzeSource(_ source: [String]) -> [String] {
+        print("OK!")
         return []
     }
     
     /** 店舗名解析 */
     func analyzeStoreName(_ webView: WKWebView, _ completion: @escaping (String?) -> Void) {
-        //
+        let webUrl = webView.url?.absoluteString ?? ""
+        if (webUrl.contains("?kishu=") && webUrl.contains("%E3%82%B8%E3%83%A3%E3%82%B0%E3%83%A9%E3%83%BC")) {
+            completion("")
+        }
     }
+}
+
+extension String {
+    
+    func isNumric() -> Bool {
+        return Int(self) != nil
+    }
+    
 }
